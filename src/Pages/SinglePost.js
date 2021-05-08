@@ -1,11 +1,6 @@
 
-import {AuthContext} from '../context/auth'
-
-
-import React , {useState , useContext , useEffect}  from 'react'
-import { Form  , Button , Header , Label , Grid , GridColumn} from 'semantic-ui-react'
-import { useMutation , useQuery , ApolloClient } from '@apollo/client';
-import FetchSinglePost from '../ApolloProvider/queries/FETCH_SINGLE_POST';
+import { useQuery } from '@apollo/client';
+import React from 'react';
 import FETCH_SINGLE_POST from '../ApolloProvider/queries/FETCH_SINGLE_POST';
 import SinglePostComp from '../components/SinglePost';
 
@@ -13,9 +8,10 @@ import SinglePostComp from '../components/SinglePost';
 
 
 
+
+
 export default function SinglePost(props) {
 
-    const authCtx = useContext(AuthContext)
     const postId  = props.match.params.id
 
     const { loading ,  data } = useQuery(FETCH_SINGLE_POST,{
