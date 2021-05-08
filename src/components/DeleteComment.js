@@ -1,14 +1,9 @@
-import React , {useContext} from 'react'
-import { Card , Icon , Label , Image ,  Button} from 'semantic-ui-react'
-import {Link} from 'react-router-dom'
-import {useHistory} from 'react-router-dom';
+import { gql, useMutation } from '@apollo/client';
+import React, { useContext } from 'react';
+import { useHistory } from 'react-router-dom';
+import { Button, Icon } from 'semantic-ui-react';
+import { AuthContext } from '../context/auth';
 
-import {AuthContext} from '../context/auth'
-import LikeButton from './LikeButton'
-import Comments from './Comments'
-import { gql } from '@apollo/client';
-import { useMutation  } from '@apollo/client';
-import FETCH_USER_POST from '../ApolloProvider/queries/FETCH_USER_POST';
 
 
 

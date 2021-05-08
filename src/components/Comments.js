@@ -1,12 +1,10 @@
-import React , {useState , useContext} from 'react'
-import {  Comment,  Header } from 'semantic-ui-react'
+import { gql, useMutation } from '@apollo/client';
 import moment from 'moment';
-
-import {AuthContext} from '../context/auth'
-import { useMutation  } from '@apollo/client';
-import { gql } from '@apollo/client';
-import DeleteButton from './DeleteButton';
+import React, { useContext, useState } from 'react';
+import { Comment, Header } from 'semantic-ui-react';
+import { AuthContext } from '../context/auth';
 import DeleteComment from './DeleteComment';
+
 
 
 

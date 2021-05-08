@@ -1,5 +1,4 @@
 import { gql } from '@apollo/client';
-import { useMutation , useQuery , ApolloClient } from '@apollo/client';
 
 const FETCH_USER_POST = gql`
 query getUserPosts($email : String!){

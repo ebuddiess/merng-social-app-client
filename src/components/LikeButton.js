@@ -19,14 +19,14 @@ export default function LikeButton({post}) {
         }else{
             setlike(false)
         }
-
+//eslint-disable-next-line
     }, [post.likes])
 
     const likeHandler = () => { 
         likePost()
     }
 
-    const [likePost, { data }] = useMutation(LikeQuery,{
+    const [likePost,] = useMutation(LikeQuery,{
         update(cache,result){
         },
         onError(err){

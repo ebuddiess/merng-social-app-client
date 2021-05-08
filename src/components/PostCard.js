@@ -1,16 +1,14 @@
-import React , {useContext} from 'react'
-import { Card , Icon , Label , Image ,  Button} from 'semantic-ui-react'
 import moment from 'moment'
-import {Link} from 'react-router-dom'
-import {AuthContext} from '../context/auth'
-import LikeButton from './LikeButton'
+import React from 'react'
+import { Link } from 'react-router-dom'
+import { Button, Card, Icon, Image, Label } from 'semantic-ui-react'
 import DeleteButton from './DeleteButton'
+import LikeButton from './LikeButton'
 
 
 
 export default function PostCard({post}) {
 
-  const authCtx = useContext(AuthContext)
 
     
     return (

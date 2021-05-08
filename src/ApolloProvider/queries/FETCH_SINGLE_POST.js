@@ -1,5 +1,4 @@
 import { gql } from '@apollo/client';
-import { useMutation , useQuery , ApolloClient } from '@apollo/client';
 
 const FETCH_SINGLE_POST = gql`
 query getPost($postId : ID!){

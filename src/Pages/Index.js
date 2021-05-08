@@ -1,9 +1,9 @@
-import { gql , useQuery  } from '@apollo/client';
-import React , {useContext , useEffect } from 'react';
-import { Grid  , Message} from 'semantic-ui-react'
-import Posts from '../components/Posts';
-import {AuthContext} from '../context/auth';
+import { useQuery } from '@apollo/client';
+import React, { useContext, useEffect } from 'react';
+import { Grid, Message } from 'semantic-ui-react';
 import FETCH_POST_QUERY from '../ApolloProvider/queries/FETCH_POST_QUERY';
+import Posts from '../components/Posts';
+import { AuthContext } from '../context/auth';
 
 
 
@@ -15,6 +15,7 @@ import FETCH_POST_QUERY from '../ApolloProvider/queries/FETCH_POST_QUERY';
 
     useEffect(() => {
       refetch()
+      //eslint-disable-next-line
     }, [data])
 
     

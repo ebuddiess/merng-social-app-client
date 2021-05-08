@@ -1,11 +1,9 @@
-import React , {useContext} from 'react'
-import { Card , Icon , Label , Image ,  Button} from 'semantic-ui-react'
 import moment from 'moment'
-import {Link} from 'react-router-dom'
-import {AuthContext} from '../context/auth'
-import LikeButton from './LikeButton'
+import React from 'react'
+import { Card, Image } from 'semantic-ui-react'
 import Comments from './Comments'
-import DeleteButton from './DeleteButton';
+import DeleteButton from './DeleteButton'
+import LikeButton from './LikeButton'
 
 
 
