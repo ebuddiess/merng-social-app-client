@@ -1,6 +1,6 @@
 import { ApolloClient, InMemoryCache , ApolloLink , HttpLink , concat } from '@apollo/client';
 
-const httpLink = new HttpLink({ uri: "http://localhost:5000" });
+const httpLink = new HttpLink({ uri: "https://social-app-merng-server.herokuapp.com/" });
 
 
 const authMiddleware = new ApolloLink((operation, forward) => {
