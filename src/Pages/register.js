@@ -1,8 +1,8 @@
 
-import React , {useState , useEffect , useContext}  from 'react'
-import { Form  , Button , Label} from 'semantic-ui-react'
-import { gql , useMutation } from '@apollo/client';
-import {AuthContext} from '../context/auth';
+import { gql, useMutation } from '@apollo/client';
+import React, { useContext, useEffect, useState } from 'react';
+import { Button, Form, Label } from 'semantic-ui-react';
+import { AuthContext } from '../context/auth';
 
 
 
