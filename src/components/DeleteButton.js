@@ -26,7 +26,7 @@ export default function DeleteButton(props) {
    }
 
    
-   const [deletePost, { data }] = useMutation(DELETE_POST,{
+   const [deletePost,] = useMutation(DELETE_POST,{
     update(proxy,result) {
 
         const data = proxy.readQuery({

@@ -1,6 +1,5 @@
 import { gql, useMutation } from '@apollo/client';
 import React, { useContext } from 'react';
-import { useHistory } from 'react-router-dom';
 import { Button, Icon } from 'semantic-ui-react';
 import { AuthContext } from '../context/auth';
 
