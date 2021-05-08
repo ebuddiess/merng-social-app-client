@@ -31,7 +31,7 @@ const CommentComp = (props) => {
     const onchange = (e) => { 
           setComment(e.target.value)
     }
-    const [createComment, { data }] = useMutation(CREATE_COMMENT,{
+    const [createComment,] = useMutation(CREATE_COMMENT,{
       update(proxy,result){
       },
 

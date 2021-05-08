@@ -7,12 +7,6 @@ import { AuthContext } from '../context/auth';
 
 
 
-const DELETE_POST = gql`
-mutation deletePost($postId : ID!){
-    deletePost(postId:$postId)
-}
-`
-
 const DELETE_COMMENT = gql`
 mutation deleteComment($postId : ID! , $commentId : ID!){
     deleteComment(postId:$postId , commentId : $commentId) {
@@ -41,7 +35,6 @@ export default function DeleteButton(props) {
     const {comment} = props
 
     const authCtx = useContext(AuthContext)
-    let history = useHistory()
 
     const commentHandler = () => { 
        deleteComment()
